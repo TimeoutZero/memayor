@@ -12,7 +12,8 @@ app.use(morgan('combined'));
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-app.use('/proposal', require('./features/proposal/route.js'));
+app.use('/city'     , require('./features/city/route.js'));
+app.use('/proposal' , require('./features/proposal/route.js'));
 
 app.listen(PORT, () => {
     console.log(`MeMayor started... PORT=${PORT}`);
