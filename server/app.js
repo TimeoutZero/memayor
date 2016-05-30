@@ -2,8 +2,6 @@ var express     = require('express'),
     morgan      = require('morgan'),
     bodyParser  = require('body-parser');
     
-var mongoose = require('./config/mongo.js');
-
 const PORT = process.env.MEMAYOR_PORT || 7000;
 
 var app = express();

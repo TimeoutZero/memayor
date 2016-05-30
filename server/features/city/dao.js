@@ -6,7 +6,7 @@ var Q        = require('Q'),
 class CityDAO {
     
     findAll (params = {}) {
-       return Q.promise((req, res) => {
+       return Q.promise((resolve, reject) => {
            City.find(params, (err, cities) => {
                if (err) {
                    reject(err);

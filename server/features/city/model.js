@@ -7,7 +7,7 @@ var schema = new Schema({
     idh_l   : Number,
     idh_e   : Number,
     score   : Number
-});
+},{ collection: 'City' });
 
 var City = moongose.model('City', schema);
 module.exports = City;

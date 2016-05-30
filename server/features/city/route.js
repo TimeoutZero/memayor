@@ -18,3 +18,5 @@ function executer(promise, res) {
 		})
 		.done();
 }
+
+module.exports = router;
