@@ -14,7 +14,7 @@
   margin-bottom : 20px;
   text-align: center;
   background-color: #000">
-  
+
   <div class="element" style="
       position: relative;
       top: 50%;
@@ -24,7 +24,7 @@
       margin: 0 auto; 
       text-align: center; ">
     <p>
-      <h1>MeMayor</h1> 
+      <h1>MeMayor</h1>
       <h4>A maior plataforma de desenvolvimento humanitário, aqui você ajuda sua cidade a crescer sem depender de politicos,
       conheça/crie e vote nas propostas estabelicidades pelos próprios cidadões</h4>
     </p>
@@ -32,18 +32,34 @@
 </div>
 
 <div class="container">
-  Cidades
-  <div class="form-group" >
-    <input type="text" class="form-control" id="search" />
-  </div>
   
-  <ul>
-    <li ng-repeat="city in homeCtrl.cities">
-      
-      <h2>{{city.name}}</h2>
-      <span><b>IDH</b>: {{city.idh}} <b>Score</b>:  {{city.score}}</span>
-    </li>
-  </ul>
-  
-</div>
+  <div class="row">
+    <div class="col-md-8">
+      <ul class="list-unstyled">
+        <li ng-repeat="proposal in proposalCtrl.proposals">
 
+          <div class="row">
+
+            <div class="col-md-8">
+              <div class="col-md-12">
+                <h1>{{proposal.title}}</h1>
+              </div>
+              <div class="col-md-12">
+                {{proposal.description}}
+              </div>
+            </div>
+            <div class="col-md-4">
+              <span class="glyphicon glyphicon-heart" style="font-size: 32px;" aria-hidden="true"> {{proposal.votes}}</span>
+            </div>
+          
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <h2>Itapecerica da Serra</h2>
+      <h3>140 mil habitantes</h3>
+    </div>
+  </div>  
+
+</div>
