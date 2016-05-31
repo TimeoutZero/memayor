@@ -40,7 +40,7 @@
   <ul>
     <li ng-repeat="city in homeCtrl.cities">
       
-      <h2>{{city.name}}</h2>
+      <h2 ui-sref="simpleTheme.proposal {{city.id}}">{{city.name}}</h2>
       <span><b>IDH</b>: {{city.idh}} <b>Score</b>:  {{city.score}}</span>
     </li>
   </ul>
