@@ -7,17 +7,23 @@ angular.module 'MeMayor'
   .config ($stateProvider, $urlRouterProvider) ->
 
     $stateProvider
-      .state "simpleTheme.home",
-        url  : "home"
+      .state "simpleTheme.city",
+        url  : "city"
         views:
           'main@simpleTheme':
-            templateUrl : "app/features/home/template.html"
-            controller  : "HomeController as homeCtrl"
+            templateUrl : "app/features/city/main/template.html"
 
         resolve:
           lang:  ['$translatePartialLoader', '$q', ($translatePartialLoader, $q)->
             promises = [
-              $translatePartialLoader.addPart('features/home')
+              $translatePartialLoader.addPart('features/city')
             ]
             return $q.all(promises)
           ]
+
+      .state "simpleTheme.city.list",
+        url  : "/list"
+        views:
+          '@simpleTheme.city':
+            templateUrl : "app/features/city/list/template.html"
+            controller  : "CityListController as listCtrl"

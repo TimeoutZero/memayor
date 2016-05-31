@@ -24,4 +24,4 @@ angular.module 'MeMayor'
 
 
 
-    $urlRouterProvider.otherwise '/home'
+    $urlRouterProvider.otherwise '/city/list'

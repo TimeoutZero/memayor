@@ -1,0 +1,37 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <img alt="Brand" src="...">
+      </a>
+    </div>
+  </div>
+</nav>
+
+
+<div mm-banner>
+  <h1>MeMayor</h1>
+  <h4>A maior plataforma de desenvolvimento humanitário, aqui você ajuda sua cidade a crescer sem depender de politicos,
+    conheça/crie e vote nas propostas estabelicidades pelos próprios cidadões</h4>
+</div>
+
+<div class="container">
+  Cidades
+  <div class="form-group" >
+    <input type="text" class="form-control" id="search" />
+  </div>
+
+  <ul>
+    <li ng-repeat="city in cityCtrl.cities">
+      <h2 ui-sref="simpleTheme.proposal.list" ng-bind="city.name"></h2>
+      <span>
+        <b>IDH</b>:
+        <span ng-bind="city.idh"></span>
+        <b>Score</b>:
+        <span ng-bind="city.score"></span>
+      </span>
+    </li>
+  </ul>
+
+</div>
+
