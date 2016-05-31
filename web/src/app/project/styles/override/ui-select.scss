@@ -1,0 +1,38 @@
+
+
+.ui-select-container{
+  color : $primary-text-color ;
+  border: none;
+  font-weight: 300;
+
+  .ui-select-placeholder {
+    color: rgba(119, 119, 119, 0.59);
+  }
+
+  .ui-select-choices.ui-select-choices-content.ui-select-dropdown.dropdown-menu {
+   width: auto;
+   @include borderRadius(0);
+   min-width: 100%;
+  }
+
+  .ui-select-toggle, .ui-select-search {
+    @include borderRadius(0);
+  }
+
+  .ui-select-match-text{
+    color : $primary-text-color ;
+    text-overflow: ellipsis;
+    width: 100%;
+    overflow: hidden;
+  }
+}
+
+.ui-select-multiple {
+  border: 1px solid #ccc;
+}
+
+.ui-select-match {
+  .btn, .btn.form-control {
+    padding: 6px 30px 6px 10px;
+  }
+}

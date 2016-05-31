@@ -1,0 +1,172 @@
+{
+
+  "GENERAL" : {
+    "SAVE"   : "Save",
+    "CANCEL" : "Cancel",
+    "EDIT"   : "Edit"  ,
+    "DELETE" : "Delete",
+    "REMOVE" : "@:GENERAL.DELETE",
+
+    "CLASSIFICATION" : "Classification",
+
+    "NEW"              : "New",
+    "WHEN"             : "When",
+    "FILTER"           : "Filter",
+    "NAME"             : "Name",
+    "REQUIRED"         : "Required",
+    "ACTIONS"          : "Actions",
+
+    "AND"              : "AND",
+    "OR"               : "OR",
+
+    "PLEASE_TRY_AGAIN" : "Please try again",
+    "CLICK_HERE"       : "Click here",
+    "TO_ADD_NEW"       : "To add {gender, select, he{a new} she{a new} other{a new}}",
+    "WORKFLOW_STEP_EMAIL_TEXT_DEFAULT" : "Um novo documento aguarda uma ação sua para fazer parte dos documentos da empresa.\n\nPor favor, acesse o Holmes e entre na pasta inteligente \"$pasta\" para ver o arquivo.",
+
+    "QUESTION_WHO_CAN_SEE"         : "Quem pode ver?",
+    "QUESTION_WHO_CAN_TAKE_ACTION" : "Quem pode tomar ação?",
+
+    "VERBS": {
+      "SINGULAR": {
+        "BE" : "{simple, select, future{for} present{é} past{era} other{é} }"
+      },
+      "PLURAL": {
+        "BE" : "{simple, select, future{forem} present{são} past{eram} other{são} }"
+      }
+    },
+
+    "PLACEHOLDERS": {
+      "SELECT": "Select"
+    },
+
+    "PROPERTY_TYPES": {
+      "TEXT": "Text",
+      "NUMBER": "Number",
+      "MULTI": "Multi selection list",
+      "LIST": "List",
+      "RELATED_LIST": "Related list",
+      "DATE": "Date",
+      "CURRENCY": "Currency",
+      "undefined" : ""
+
+    },
+
+    "BOOLEAN": {
+      "TRUE": "Yes",
+      "True" : "@:GENERAL.BOOLEAN.TRUE",
+      "true" : "@:GENERAL.BOOLEAN.TRUE",
+      "FALSE": "No",
+      "False" : "@:GENERAL.BOOLEAN.FALSE",
+      "false" : "@:GENERAL.BOOLEAN.FALSE"
+    },
+
+
+    "ITEM" : "Item",
+
+    "PLEASE_LOGIN_HOLMES" : "Please, login at <a href='{origin}' target='_blank'>Holmes</a> and try again <span> = )</span>",
+    "RESTRICT_ACCESS"     : "Restrict access"
+  },
+
+  "PLACEHOLDERS" : {
+    "SELECT" : "Select",
+    "SELECT_OR_TYPE_TO_FILTER" : "Select or type to filter"
+  },
+
+  "QUESTIONS" : {
+    "WHO_CAN_SEE"         : "Who can see?",
+    "WHO_CAN_TAKE_ACTION" : "Who can take action?",
+    "WHICH_PROFILE_TAKE_ACTION" : "Which user groups can take action?"
+  },
+
+  "ACTIONS": {
+    "SEARCH"     : "Search",
+    "DELETE"     : "Delete",
+    "REMOVE"     : "Remove",
+    "ADD"        : "Add",
+    "SAVE"       : "Save",
+    "CANCEL"     : "Cancel",
+    "EDIT"       : "Edit",
+    "FINISH_EDIT": "Complete edition",
+    "REFRESH"    : "Refresh",
+    "CONFIRM"    : "Confirm",
+    "SEND"       : "Send"
+  },
+
+  "ENTITY" : {
+    "NATURE"       : "{plural, select, one{Tipo de documento} many{Tipos de documento}  other{Tipo de documento} }",
+    "LIST_PROPERTY": "{plural, select, one{Campo} many{Campos} other{Campo} } do tipo lista",
+    "PROPERTY"     : "{plural, select, one{Campo} many{Campos} other{Campo} }",
+    "PROFILE"      : "{plural, select, one{Grupo de usuários} many{Grupos de usuários}  other{Grupo de usuários}}",
+    "NATURE_GROUP" : "{plural, select, one{Grupo de documentos} many{Grupos de documentos} other{Grupo de documentos} }",
+    "USER"         : "{plural, select, one{Usuário} many{Usuários} other{Usuário} }",
+    "WORKFLOW"     : "{plural, select, one{Workflow} many{Workflows} other{Workflow} }",
+    "WORKFLOW_STEP": "{plural, select, one{Passo} many{Passos} other{Passo} }",
+    "PLAN"         : "{plural, select, one{Plano de utilização} many{Planos de utilização} other{Plano de utilização} }",
+    "RESTRICTION"  : "{plural, select, one{Restrição} many{Restrições} other{Restrição} }",
+    "PERMISSION"   : "{plural, select, one{Permissão} many{Permissões} other{Permissão}}",
+    "TRASH"        : "{plural, select, one{Lixeira} many{Lixeiras} other{Lixeira}}",
+    "NATURE_GROUP_PROPERTY" : "{plural, select, one{Campo chave} many{Campos chave} other{Campo chave}}",
+    "DOCUMENT"              : "{plural, select, one{Document} many{Documents} other{Document}}",
+
+
+    "OLD" : {
+      "NATURE"       : "{plural, select, one{Nature} many{Natures}  other{Nature} }",
+      "PROPERTY"     : "{plural, select, one{Característica} many{Características} other{Característica} }",
+      "PROFILE"      : "{plural, select, one{Perfil} many{Perfis} other{Perfil} }",
+      "NATURE_GROUP" : "{plural, select, one{Documento relacionado} many{Documentos relacionados} other{Documento relacionado} }",
+      "USER"         : "{plural, select, one{Usuário} many{Usuários} other{Usuário} }",
+      "PLAN"         : "{plural, select, one{Plano de utilização} many{Planos de utilização} other{Plano de utilização} }",
+      "RESTRICTION"  : "{plural, select, one{Restrição} many{Restrições} other{Restrição} }",
+      "PERMISSION"   : "{plural, select, one{Permissão} many{Permissões} other{Permissão}}",
+      "TRASH"        : "{plural, select, one{Lixeira} many{Lixeiras} other{Lixeira}}"
+    }
+  },
+
+  "CRUD": {
+    "LIST" : {
+      "NO_RECORDS" : "You have no {entity}"
+    },
+
+
+
+    "BUTTONS" : {
+      "NEW"    : "Create new {entity}",
+      "SAVE"   : "@:ACTIONS.SAVE",
+      "CANCEL" : "@:ACTIONS.CANCEL",
+      "EDIT"   : "@:ACTIONS.EDIT",
+      "REMOVE" : "@:ACTIONS.REMOVE {entity}",
+      "FINISH" : "@:ACTIONS.FINISH_EDIT ",
+      "ADD_ENTITY" : "@:ACTIONS.ADD {entity}",
+      "COMPLETE_EDIT" : "@:ACTIONS.FINISH_EDIT"
+    },
+
+    "ALERTS": {
+
+      "REMOVE" : {
+        "CONFIRM": {
+          "TITLE": "@:GENERAL.DELETE",
+          "TEXT": "Are you sure about delete <strong>{name}</strong>?",
+          "CANCEL": "@:ACTIONS.CANCEL",
+          "OK"    : "Yes"
+        },
+        "SUCCESS": "{entity} deleted",
+        "ERROR" : {
+          "DEFAULT": "Error to delete {entity}, @:GENERAL.PLEASE_TRY_AGAIN"
+        }
+      },
+
+
+      "DEFAULT" : {
+        "ERROR" : {
+          "DEFAULT"                        : "An unknown error has occurred, please contact the system's administrator",
+          "user.started.new.session"       : "A new session with your user started on another device or browser",
+          "invalid.csrf.token"             : "The session ended Please log in again.",
+          "user.unauthorized"              : "This user has no permission to access this.",
+
+          "UserEntity.notFound"            : "User not found"
+        }
+      }
+    }
+  }
+}

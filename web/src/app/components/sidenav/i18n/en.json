@@ -1,0 +1,9 @@
+{
+  "SIDENAV": {
+    "HEADER"        : "Watson",
+    "COMPANIES"     : "Companies",
+    "QUEUES"        : "Queues",
+    "LOGS"          : "Logs",
+    "USERS"         : "Users"
+  }
+}

@@ -1,0 +1,82 @@
+@font-face {
+	font-family: 'admin';
+	src:url('../assets/fonts/admin.eot');
+	src:url('../assets/fonts/admin.eot') format('embedded-opentype'),
+		url('../assets/fonts/admin.ttf') format('truetype'),
+		url('../assets/fonts/admin.woff') format('woff'),
+		url('../assets/fonts/admin.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-adm-"], [class*=" icon-adm-"] {
+	font-family: 'admin';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-adm-add:before {
+	content: "\e600";
+}
+.icon-adm-back:before {
+	content: "\e601";
+}
+.icon-adm-check:before {
+	content: "\e602";
+}
+.icon-adm-close:before {
+	content: "\e603";
+}
+.icon-adm-groups:before {
+	content: "\e604";
+}
+.icon-adm-help:before {
+	content: "\e605";
+}
+.icon-adm-input:before {
+	content: "\e606";
+}
+.icon-adm-logo:before {
+	content: "\e607";
+}
+.icon-adm-plan:before {
+	content: "\e608";
+}
+.icon-adm-reload:before {
+	content: "\e609";
+}
+.icon-adm-sub-edit:before {
+	content: "\e60a";
+}
+.icon-adm-trash:before {
+	content: "\e60b";
+}
+.icon-adm-user:before {
+	content: "\e60c";
+}
+.icon-adm-view:before {
+	content: "\e60d";
+}
+.icon-adm-pencil:before {
+	content: "\e60e";
+}
+.icon-adm-file-empty:before {
+	content: "\e60f";
+}
+.icon-adm-files-empty:before {
+	content: "\e610";
+}
+.icon-adm-tree:before {
+	content: "\e612";
+}
+.icon-adm-download:before {
+	content: "\e613";
+}

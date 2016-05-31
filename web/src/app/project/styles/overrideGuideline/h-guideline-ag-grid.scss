@@ -1,0 +1,30 @@
+.ag-grid-wrapper {
+
+  .ag-header {
+    line-height: 35px;
+    border-bottom: none;
+    cursor: pointer;
+    background : $primary-color;
+    color      : #FFFFFF;
+    font-weight: 500;
+
+    .ag-header-icon {
+      margin-right: 10px;
+    }
+
+    .ag-header-cell {
+      text-align: left;
+      border-right: $agGridBorder;
+    }
+
+    .ag-header-cell.text-center {
+      text-align: center;
+      padding: 0;
+    }
+
+    .ag-header-cell.text-right {
+      text-align: right;
+    }
+
+  }
+}

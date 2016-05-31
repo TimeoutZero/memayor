@@ -1,0 +1,216 @@
+{
+
+  "GENERAL" : {
+    "SAVE"   : "Salvar",
+    "CANCEL" : "Cancelar",
+    "EDIT"   : "Editar",
+    "DELETE" : "Excluir",
+    "REMOVE" : "@:GENERAL.DELETE",
+
+    "CLASSIFICATION" : "Classificação",
+
+    "NEW"              : "Novo",
+    "WHEN"             : "Quando",
+    "FILTER"           : "Filtro",
+    "NAME"             : "Nome",
+    "REQUIRED"         : "Obrigatório",
+    "ACTIONS"          : "Ações",
+
+    "AND"              : "E",
+    "OR"               : "Ou",
+
+    "PLEASE_TRY_AGAIN" : "por favor tente novamente.",
+    "CLICK_HERE"       : "Clique aqui",
+    "TO_ADD_NEW"       : "para adicionar {gender, select, he{um novo} she{uma nova} other{um novo}}",
+    "WORKFLOW_STEP_EMAIL_TEXT_DEFAULT" : "Um novo documento aguarda uma ação sua para fazer parte dos documentos da empresa.\n\nPor favor, acesse o Holmes e entre na pasta inteligente \"$pasta\" para ver o arquivo.",
+
+    "QUESTION_WHO_CAN_SEE"         : "Quem pode ver?",
+    "QUESTION_WHO_CAN_TAKE_ACTION" : "Quem pode tomar ação?",
+
+    "VERBS": {
+      "SINGULAR": {
+        "BE" : "{simple, select, future{for} present{é} past{era} other{é} }"
+      },
+      "PLURAL": {
+        "BE" : "{simple, select, future{forem} present{são} past{eram} other{são} }"
+      }
+    },
+    "PLACEHOLDERS": {
+      "SELECT": "Selecione"
+    },
+
+    "PROPERTY_TYPES": {
+      "TEXT": "Texto",
+      "NUMBER": "Numérico",
+      "MULTI": "Lista Multi-seleção",
+      "LIST": "Lista",
+      "RELATED_LIST": "Lista relacionada",
+      "DATE": "Data",
+      "CURRENCY": "Moeda",
+      "undefined" : ""
+
+    },
+
+    "BOOLEAN": {
+      "TRUE": "Sim",
+      "True" : "@:GENERAL.BOOLEAN.TRUE",
+      "true" : "@:GENERAL.BOOLEAN.TRUE",
+      "FALSE": "Não",
+      "False" : "@:GENERAL.BOOLEAN.FALSE",
+      "false" : "@:GENERAL.BOOLEAN.FALSE"
+    },
+
+
+    "ITEM" : "Item",
+
+    "PLEASE_LOGIN_HOLMES" : "Por favor, faça login no <a href='{origin}' target='_blank'>Holmes</a> e tente novamente <span> = )</span>",
+    "RESTRICT_ACCESS"     : "Acesso restrito",
+    "VALUE"                 : "{plural, plural, one{Valor} many{Valores} other{Valor}}"
+  },
+
+  "PLACEHOLDERS" : {
+    "SELECT" : "Selecione",
+    "SELECT_OR_TYPE_TO_FILTER" : "Selecione ou digite para filtrar"
+  },
+
+  "QUESTIONS" : {
+    "WHO_CAN_SEE"         : "Quem pode ver?",
+    "WHO_CAN_TAKE_ACTION" : "Quem pode tomar ação?",
+    "WHICH_PROFILE_TAKE_ACTION" : "Que grupos de usuários podem tomar ação?"
+  },
+
+  "ACTIONS": {
+    "SEARCH" : "Buscar",
+    "DELETE" : "Remover",
+    "REMOVE" : "@:ACTIONS.DELETE",
+    "ADD" : "Adicionar",
+    "SAVE": "Salvar",
+    "CANCEL": "Cancelar",
+    "EDIT" : "Editar",
+    "FINISH_EDIT" : "Concluir edição",
+    "REFRESH"     : "Atualizar",
+    "CONFIRM"     : "Confirmar",
+    "SEND"        : "Enviar"
+  },
+
+  "ENTITY" : {
+    "NATURE"       : "{plural, select, one{Tipo de documento} many{Tipos de documento}  other{Tipo de documento} }",
+    "LIST_PROPERTY": "{plural, select, one{Campo} many{Campos} other{Campo} } do tipo lista",
+    "PROPERTY"     : "{plural, select, one{Campo} many{Campos} other{Campo} }",
+    "PROFILE"      : "{plural, select, one{Grupo de usuários} many{Grupos de usuários}  other{Grupo de usuários}}",
+    "NATURE_GROUP" : "{plural, select, one{Grupo de documentos} many{Grupos de documentos} other{Grupo de documentos} }",
+    "USER"         : "{plural, select, one{Usuário} many{Usuários} other{Usuário} }",
+    "WORKFLOW"     : "{plural, select, one{Workflow} many{Workflows} other{Workflow} }",
+    "WORKFLOW_STEP": "{plural, select, one{Passo} many{Passos} other{Passo} }",
+    "PLAN"         : "{plural, select, one{Plano de utilização} many{Planos de utilização} other{Plano de utilização} }",
+    "RESTRICTION"  : "{plural, select, one{Restrição} many{Restrições} other{Restrição} }",
+    "PERMISSION"   : "{plural, select, one{Permissão} many{Permissões} other{Permissão}}",
+    "TRASH"        : "{plural, select, one{Lixeira} many{Lixeiras} other{Lixeira}}",
+    "NATURE_GROUP_PROPERTY" : "{plural, select, one{Campo chave} many{Campos chave} other{Campo chave}}",
+    "DOCUMENT"              : "{plural, select, one{Documento} many{Documentos} other{Documento}}",
+
+
+    "OLD" : {
+      "NATURE"       : "{plural, select, one{Natureza} many{Naturezas}  other{Natureza} }",
+      "PROPERTY"     : "{plural, select, one{Característica} many{Características} other{Característica} }",
+      "PROFILE"      : "{plural, select, one{Perfil} many{Perfis} other{Perfil} }",
+      "NATURE_GROUP" : "{plural, select, one{Documento relacionado} many{Documentos relacionados} other{Documento relacionado} }",
+      "USER"         : "{plural, select, one{Usuário} many{Usuários} other{Usuário} }",
+      "PLAN"         : "{plural, select, one{Plano de utilização} many{Planos de utilização} other{Plano de utilização} }",
+      "RESTRICTION"  : "{plural, select, one{Restrição} many{Restrições} other{Restrição} }",
+      "PERMISSION"   : "{plural, select, one{Permissão} many{Permissões} other{Permissão}}",
+      "TRASH"        : "{plural, select, one{Lixeira} many{Lixeiras} other{Lixeira}}"
+    }
+  },
+
+  "CRUD": {
+    "LIST" : {
+      "NO_RECORDS" : "Você ainda não criou {gender, select, he{nenhum} she{nenhuma} other{nenhum}} {entity}"
+    },
+
+    "LABELS" : {
+      "NO_RELATIONSHIP" : "{relGender, select, she{Nenhuma} he{Nenhum} other{Nenhum}} {relEntity} {relGender, select, she{adicionada} he{adicionado} other{adicionado}} a {gender, select, she{esta} he{este} other{este}} {entity}",
+      "NO_RELATIONSHIP_FOUND" : "{relGender, select, she{Nenhuma} he{Nenhum} other{Nenhum}} {entity} {relGender, select, she{encontrada} he{encontrado} other{encontrado}}"
+    },
+
+    "BUTTONS" : {
+      "NEW"    : "Criar {gender, select, he{novo} she{nova} other{novo}} {entity}",
+      "SAVE"   : "Salvar",
+      "CANCEL" : "Cancelar",
+      "EDIT"   : "Editar",
+      "REMOVE" : "Excluir {entity}",
+      "FINISH" : "Concluir edição",
+      "ADD_ENTITY" : "Adicionar {entity}",
+      "COMPLETE_EDIT" : "Concluir edição"
+    },
+
+    "ALERTS": {
+      "CREATE": {
+        "SUCCESS": "{entity} {gender, select, he{criado} she{criada} other{criado} }",
+        "ERROR": {
+          "DEFAULT": "Erro ao tentar criar {entity}, @:GENERAL.PLEASE_TRY_AGAIN",
+          "name.invalidSize" : "Nome do {entity} inválido, @:GENERAL.PLEASE_TRY_AGAIN"
+        }
+      },
+
+      "EDIT": {
+        "SUCCESS": "{entity} {gender, select, he{atualizado} she{atualizada} other{atualizado} }",
+        "ERROR": {
+          "DEFAULT": "Erro ao tentar atualizar {entity},  @:GENERAL.PLEASE_TRY_AGAIN ",
+          "name.invalidSize" : "Nome do {entity} inválido, @:GENERAL.PLEASE_TRY_AGAIN"
+        }
+      },
+
+      "REMOVE" : {
+        "CONFIRM": {
+          "TITLE": "@:GENERAL.DELETE",
+          "TEXT": "Realmente deseja excluir <strong>{name}</strong>?",
+          "CANCEL": "@:ACTIONS.CANCEL",
+          "OK"    : "Sim, continuar"
+        },
+        "SUCCESS": "{entity} {gender, select, he{excluído} she{excluída} other{excluído} }",
+        "ERROR" : {
+          "DEFAULT": "Erro ao tentar excluir {entity}, @:GENERAL.PLEASE_TRY_AGAIN"
+        }
+      },
+
+      "CREATE_RELATIONSHIP" : {
+        "SUCCESS": "{relEntity} <strong>{relName}</strong> {gender, select, he{adicionado} she{adicionada} other{adicionado} } a <strong>{entityName}</strong>",
+        "ERROR"  : {
+          "DEFAULT" : "Ocorreu um erro desconhecido, favor informar ao administrador do sistema"
+        }
+      },
+
+      "REMOVE_RELATIONSHIP" : {
+        "SUCCESS": "<strong>{relName}</strong> {gender, select, he{removido} she{removida} other{removido} } de <strong>{entityName}</strong>",
+        "CONFIRM": {
+          "TITLE": "@:GENERAL.DELETE",
+          "TEXT": "Realmente deseja remover <strong>{relName}</strong> de <strong>{entityName}</strong>?"
+        },
+        "ERROR"  : {
+          "DEFAULT" : "Ocorreu um erro desconhecido, favor informar ao administrador do sistema"
+        }
+      },
+
+      "DEFAULT" : {
+        "ERROR" : {
+          "DEFAULT"                        : "Ocorreu um erro desconhecido, favor informar ao administrador do sistema",
+          "user.started.new.session"       : "Uma nova sessão com o seu usuário foi iniciada em outro aparelho ou navegador",
+          "invalid.csrf.token"             : "A sessão foi finalizada. Favor efetuar o login novamente no Holmes.",
+          "user.unauthorized"              : "Usuário sem permissão de acesso",
+
+          "name.notAlpha"                  : "Esse campo não pode conter os caracteres: <span not-alpha></span>",
+          "name.cannotBeUpdated"           : "Você não pode alterar o nome de um registro já em uso",
+          "name.alreadyInUse"              : "O nome digitado já está sendo utilizado",
+
+          "UserEntity.notFound"            : "Usuário não encontrado",
+          "UserRestrictionEntity.notFound" : "Restrição de usuário não encontrada",
+
+          "excess.user"                     : "Você já excedeu o limite de usuários ativos para o seu Plano de Utilização",
+          "user.operation.insufficient"     : "Não foi possível processar pois seu limite de usuários de operação excede o plano",
+          "user.visualization.insufficient" : "Não foi possível processar pois seu limite de usuários de visualização excede o plano"
+        }
+      }
+    }
+  }
+}

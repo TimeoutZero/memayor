@@ -1,0 +1,13 @@
+{
+  "HGRIDDEFAULTS": {
+    "PAGE"       : "Page",
+    "MORE"       : "more",
+    "TO"         : "to",
+    "OF"         : "of",
+    "NEXT"       : "Next",
+    "LAST"       : "Last",
+    "FIRST"      : "First",
+    "PREVIOUS"   : "Previous",
+    "LOADINGOOO" : "Loading..."
+  }
+}

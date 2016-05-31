@@ -1,0 +1,18 @@
+
+.h-file-input {
+  visibility: hidden;
+  height: 0px;
+  width: 1px;
+}
+
+.h-file-input-trigger {
+  color: $primary-color;
+  cursor: pointer;
+}
+
+.h-file-wrapper {
+  display: inline-block;
+  padding: 0;
+  width: auto;
+  float: left;
+}

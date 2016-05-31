@@ -1,0 +1,124 @@
+.sidenav {
+  $timeToAppearEarly: 0.1s;
+  $timeToAppear: 0.3s;
+  $timeToAppearLater: 0.5s;
+
+  width: 275px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 1px;
+  min-height: 100%;
+  background-color: $primary-color;
+  color: $secondary-color;
+  z-index: 999;
+
+  &.collapsed {
+    width: 100px;
+
+    .header {
+      width: 60px
+    }
+
+    .title {
+      opacity: 0;
+    }
+
+
+
+    .features {
+      li {
+        height: 90px;
+        line-height: 110px;
+
+        .feature-name {
+          display: none;
+        }
+
+        .icon {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  .header {
+    height: 50px;
+    width: 210px;
+    margin: 37px auto;
+
+    .icon-adm-logo {
+      float: left;
+      font-size: 51px;
+      margin-right: 14px;
+    }
+
+    .title {
+      font-size: 21px;
+      float: left;
+      font-weight: 300;
+    }
+
+    .company {
+      font-size: 16px;
+      float: left;
+      opacity: 0.5;
+      filter: alpha(opacity=50);
+    }
+  }
+
+  .title {
+    opacity: 1;
+  }
+
+  .features {
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      cursor: pointer;
+
+      a {
+        color: #fff;
+        text-decoration: none;
+        padding: 0px 28px;
+        line-height: 60px;
+        font-size: 40px;
+       }
+
+      .feature-name{
+        display: inline-block;
+        font-size: 20px;
+      }
+
+       .icon {
+        font-size: 20px;
+       }
+
+      &.active {
+        background-color: $selected-item-bg-color;
+      }
+    }
+  }
+
+  // Admin Icons
+  span[class*="icon-adm-"] {
+    color: #FFFFFF;
+  }
+}
+
+
+@media screen and (max-width: 640px) {
+  .sidenav {
+    display: none;
+  }
+}
+
+
+
+
+
+

@@ -1,0 +1,25 @@
+.main-view {
+  background-color: $secondary-color;
+  overflow: auto;
+  height: 100%;
+  min-height: 100%;
+}
+
+a {
+  cursor: pointer;
+  color: $secondary-text-color;
+}
+
+.success {
+  color: $success-text-color;
+}
+
+.danger {
+  color: $btn-danger;
+}
+
+.screen-height {
+  height: 100%;
+  min-height: 100%;
+}
+
