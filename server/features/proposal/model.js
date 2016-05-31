@@ -1,6 +1,8 @@
 var moongose = require('../../config/mongo.js');
 var Schema   = moongose.Schema;
 
+const name = 'Proposal';
+
 var schema = new Schema({
     title       : { type : String , required : true },
     description : { type : String , required : true },
@@ -9,7 +11,7 @@ var schema = new Schema({
     votes       : Number,
     created_at  : Date,
     updated_at  : Date
-});
+}, { collection : name });
 
 schema.pre('save', function (next) {
     
@@ -22,6 +24,4 @@ schema.pre('save', function (next) {
     next();
 })
 
-var Proposal = moongose.model('Proposal', schema);
-
-module.exports = Proposal;
+module.exports = moongose.model(name, schema);

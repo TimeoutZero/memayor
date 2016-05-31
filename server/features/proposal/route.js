@@ -3,16 +3,6 @@ var express  = require('express'),
 	
 var router = express.Router();
 
-function executer(promise, res) {
-	promise
-		.then((proposals) => {
-			res.send(proposals)
-		}).catch((err) => {
-			res.status(500).json(err);
-		})
-		.done();
-}
-
 router.route('/')
 	.get((req, res) => {
 		executer(dao.findAll(), res);
@@ -27,7 +17,6 @@ router.route('/')
 		};
 		
 		executer(dao.save(proposal), res);
-		
 	});
 
 router.route('/:id')
@@ -41,5 +30,16 @@ router.route('/:id')
 		console.log(`[DELETE] Proposal id=${req.params.id}`);
 		executer(dao.remove(req.params.id), res);
 	});
+
+
+function executer(promise, res) {
+	promise
+		.then((proposals) => {
+			res.send(proposals)
+		}).catch((err) => {
+			res.status(500).json(err);
+		})
+		.done();
+}
 
 module.exports = router;

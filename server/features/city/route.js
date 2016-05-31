@@ -7,7 +7,6 @@ router.route('/')
     .get((req, res) => {
         executer(dao.findAll(), res);
     });
-    
 
 function executer(promise, res) {
 	promise
