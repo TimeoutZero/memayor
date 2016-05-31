@@ -5,6 +5,11 @@ var router = express.Router();
 
 router.route('/search')
     .get((req, res) => {
+        executer(dao.search(req.query.name), res);
+    });
+
+router.route('/')
+    .get((req, res) => {
         executer(dao.findAll(), res);
     });
 

@@ -1,6 +1,6 @@
 'use strict';
 
-var Q = require('Q'),
+var Q  = require('Q'),
   City = require('./model.js');
 
 class CityDAO {
@@ -19,9 +19,10 @@ class CityDAO {
 
   search(name) {
     return Q.promise((resolve, reject) => {
-      var regexp = new RegExp(`^${name}$`, i);
-      
-      City.find({ name : regexp}, (err, cities) => {
+
+      let regexp = new RegExp(name, 'i');
+
+      City.find({ name : regexp }, (err, cities) => {
         if (err) {
           reject(err);
         } else {
