@@ -23,7 +23,7 @@
 
   <ul>
     <li ng-repeat="city in listCtrl.cities">
-      <h2 ui-sref="simpleTheme.proposal.list" ng-bind="city.name"></h2>
+      <h2 ui-sref="simpleTheme.city.profile({id: city.id })" ng-bind="city.name"></h2>
       <span>
         <b>IDH</b>:
         <span ng-bind="city.idh"></span>

@@ -12,5 +12,8 @@ angular.module "MeMayor.controllers"
             { _id: 3, name : 'Embu das artes', idh : 0.945        , score : 68 }
           ]
 
+       getById: ->
+        $q.when data: {}
+
     }
 

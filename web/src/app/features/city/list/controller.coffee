@@ -3,7 +3,7 @@
 # Module
 # =============================================
 angular.module "MeMayor.controllers"
-  .controller "CityListController", ($scope, cities) ->
+  .controller "CityListController", ($scope, cities, $timeout) ->
 
     ###*
      * Basic Atributes
@@ -12,6 +12,7 @@ angular.module "MeMayor.controllers"
     ctrl.LANG_KEY = 'HOME_FEATURE'
 
     ctrl.cities = cities?.data or [];
+    ctrl.searchDebounce = null
 
 
     ###*
@@ -22,6 +23,8 @@ angular.module "MeMayor.controllers"
     ###*
      * Initialize
     ###
+    ctrl.actions =
+      onSearch: ->
 
 
 

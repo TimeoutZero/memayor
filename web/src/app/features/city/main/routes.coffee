@@ -31,3 +31,14 @@ angular.module 'MeMayor'
               cities: ['CityService', (CityService) ->
                 return CityService.list()
               ]
+
+      .state "simpleTheme.city.profile",
+        url  : "/:id"
+        views:
+          '@simpleTheme.city':
+            templateUrl : "app/features/city/profile/template.html"
+            controller  : "CityProfileController as profileCtrl"
+            resolve:
+              model: ['CityService', '$stateParams', (CityService, $stateParams) ->
+                return CityService.getById($stateParams)
+              ]

@@ -4,12 +4,13 @@
 # =============================================
 
 angular.module "MeMayor.controllers"
-  .controller "ProposalListController", ($scope) ->
+  .controller "CityProfileController", ($scope, model) ->
 
       ###*
       * Basic Atributes
       ###
       ctrl          = @
+      ctrl.model    = model?.data or {}
       ctrl.proposals = [
           {
               title       : 'Movimento contra gripe A1N1',
