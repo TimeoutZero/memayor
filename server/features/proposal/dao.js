@@ -17,9 +17,9 @@ class ProposalDAO {
         });
     }
 
-    findAll(params = {}) {
+    findAllByCityId(cityId) {
         return Q.promise((resolve, reject) => {
-            proposal.find(params, (err, proposals) => {
+            proposal.find({ cityId : cityId }, (err, proposals) => {
                 if (err) {
                     reject(err);
                 } else {

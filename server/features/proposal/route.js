@@ -5,7 +5,8 @@ var router = express.Router();
 
 router.route('/')
 	.get((req, res) => {
-		executer(dao.findAll(), res);
+		let cityId = req.params.id;
+		executer(dao.findAllByCityId(cityId), res);
 	})
 	.post((req, res) => {
 		
@@ -13,13 +14,13 @@ router.route('/')
 			title 		: req.body.title,
 			description : req.body.description,
 			categories 	: req.body.categories,
-			city		: req.body.city	
+			cityId		: req.params.id	
 		};
 		
 		executer(dao.save(proposal), res);
 	});
 
-router.route('/:id')
+router.route('/:proposalId')
 	.get((req, res) => {
 		executer(dao.findById(req.params.id), res);
 	})
