@@ -10,6 +10,14 @@ angular.module "MeMayor.controllers"
         hRequest.get(config)
 
        getById: ->
+       
+       
+       create: (data = {}, config = {}) ->
+         angular.extend config,
+           url  : "#{APP_ENV.API_BASE_URL}city/#{data.cityId}/proposal"
+           data : data.data
+        
+         hRequest.post(config)
 
 
     }

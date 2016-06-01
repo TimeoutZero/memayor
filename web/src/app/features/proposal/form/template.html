@@ -1,0 +1,63 @@
+<nav class="navbar navbar-default navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        M - PIII
+      </a>
+    </div>
+  </div>
+</nav>
+
+<div mm-banner>
+  <h1>MeMayor</h1>
+  <h4>A maior plataforma de desenvolvimento humanitário, aqui você ajuda sua cidade a crescer sem depender de politicos,
+    conheça/crie e vote nas propostas estabelicidades pelos próprios cidadões</h4>
+</div>
+
+<div class="row">
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+    <form novalidate name="proposalForm" ng-submit="formCtrl.actions.submit()">
+      <div class="form-group">
+        <label class="control-label">Nome</label>
+        <input type="text" 
+          class="form-control" 
+          ng-model="formCtrl.model.title"
+          required>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label">Description</label>
+        <input type="text" 
+          class="form-control" 
+          ng-model="formCtrl.model.description"
+          required>
+      </div>
+      
+      <div class="form-group">
+        <label class="control-label">Categorias</label>
+        <div ui-select
+          ng-model="formCtrl.model.categories"
+          name="categories"
+          multiple
+          ng-required="true"
+          placeholder="Categorias"
+          >
+          <div ui-select-match>
+            {{$item}}
+          </div>
+          <div ui-select-choices repeat="category in formCtrl.categories | filter: $select.search">
+            <div ng-bind-html="category | highlight: $select.search""></div>
+          </div>
+        
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <button type="submit" class="btn btn-block btn-primary" ng-disabled="proposalForm.$invalid">
+          Salvar
+        </button>
+      </div>
+    </form>
+    
+  </div>
+</div>
