@@ -8,6 +8,11 @@ router.route('/search')
         executer(dao.search(req.query.name), res);
     });
 
+router.route('/:id')
+    .get((req, res) => {
+        executer(dao.findById(req.params.id), res);
+    });
+
 router.route('/')
     .get((req, res) => {
         executer(dao.findAll(), res);

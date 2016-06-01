@@ -15,14 +15,7 @@
   text-align: center;
   background-color: #000">
 
-  <div class="element" style="
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 5px;
-      width: 50%;
-      margin: 0 auto;
-      text-align: center; ">
+  <div mm-banner>
     <p>
       <h1>Itapecerica da Serra</h1>
       <h4>Itapecerica da Serra é um município da Microrregião de Itapecerica da Serra, localizado na região metropolitana do Estado de São Paulo no Brasil</h4>
@@ -32,27 +25,26 @@
 </div>
 
 <div class="container">
+  <div class="row">
+    <div class="col-sm-6 col-md-3" ng-repeat="proposal in profileCtrl.proposals">
+      <div class="thumbnail">
+        <img style="margin-bottom: 30px;" src="http://1.bp.blogspot.com/-4fqrt2MACHQ/UADPlJjibiI/AAAAAAAAAcc/FBN03q3jT2A/s1600/blank_post_thumbnail.png"
+          alt="...">
+        <div class="caption">
 
-  <ul class="list-unstyled">
-    <li ng-repeat="proposal in profileCtrl.proposals">
+          <h4>{{proposal.title}}</h4>
+          <span> 1.2k <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </span>
 
-      <div class="row">
+          <p style="font-size: 12px">{{proposal.description}}</p>
+          <hr />
+          <p style="text-align: center; font-size: 12px">By Lucas Martins</p>
 
-        <div class="col-md-8">
-          <div class="col-md-12">
-            <h2>{{proposal.title}}</h2>
-          </div>
-          <div class="col-md-12">
-            {{proposal.description}}
+          <div style="text-align: center">
+            <p><a href="#" class="btn btn-primary" role="button">Button</a> </p>
           </div>
         </div>
-        <div class="col-md-4">
-          <span class="glyphicon glyphicon-heart" style="font-size: 32px;" aria-hidden="true"> {{proposal.votes}}</span>
-        </div>
-
       </div>
-
-    </li>
-  </ul>
-
+    </div>
+  </div>
 </div>
