@@ -18,10 +18,12 @@
 <div class="container">
   Cidades
   <div class="form-group" >
-    <input type="text" class="form-control" id="search" />
+    <input type="text" class="form-control" id="search"
+      ng-change="listCtrl.actions.onTypeSearch()"
+      ng-model="listCtrl.search" />
   </div>
 
-  <ul>
+  <ul ng-if="listCtrl.cities.length">
     <li ng-repeat="city in listCtrl.cities">
       <h2 ui-sref="simpleTheme.city.profile({id: city.id })" ng-bind="city.name"></h2>
       <span>
@@ -32,6 +34,12 @@
       </span>
     </li>
   </ul>
+
+  <div class="row" ng-if="!listCtrl.cities.length && listCtrl.madeOneSearch && listCtrl.search">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p>Nenhuma cidade encontrada</p>
+    </div>
+  </div>
 
 </div>
 

@@ -7,7 +7,7 @@ var options = {
 
 options.modulesData = {
   proxy: {
-    target: 'http://docker:49000',
+    target: 'http://192.168.50.189:7000',
     preventWhen: function(req, res){
       var isPrevented = true;
       var byPass      = [

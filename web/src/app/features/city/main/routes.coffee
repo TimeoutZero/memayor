@@ -27,10 +27,6 @@ angular.module 'MeMayor'
           '@simpleTheme.city':
             templateUrl : "app/features/city/list/template.html"
             controller  : "CityListController as listCtrl"
-            resolve:
-              cities: ['CityService', (CityService) ->
-                return CityService.list()
-              ]
 
       .state "simpleTheme.city.profile",
         url  : "/:id"
