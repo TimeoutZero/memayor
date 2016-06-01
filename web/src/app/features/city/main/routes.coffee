@@ -34,7 +34,8 @@ angular.module 'MeMayor'
           '@simpleTheme.city':
             templateUrl : "app/features/city/profile/template.html"
             controller  : "CityProfileController as profileCtrl"
-            resolve:
-              model: ['CityService', '$stateParams', (CityService, $stateParams) ->
-                return CityService.getById($stateParams)
+            resolve     :
+              model: ['ProposalService', '$stateParams', (ProposalService, $stateParams) ->
+                return ProposalService.list($stateParams.id)
               ]
+

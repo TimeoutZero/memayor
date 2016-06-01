@@ -7,7 +7,7 @@ var schema = new Schema({
     title       : { type : String , required : true },
     description : { type : String , required : true },
     categories  : { type : Array  , required : true },
-    city        : { type : String , required : true },
+    cityId      : { type : String , required : true },
     votes       : Number,
     created_at  : Date,
     updated_at  : Date
@@ -16,6 +16,7 @@ var schema = new Schema({
 schema.pre('save', function (next) {
     
     this.updated_at = new Date();
+    this.votes      = 0;
     
     if (!this.created_at) {
         this.created_at = this.updated_at;

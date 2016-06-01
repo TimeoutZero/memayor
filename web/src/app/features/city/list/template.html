@@ -1,8 +1,8 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img alt="Brand" src="...">
+        M - PIII
       </a>
     </div>
   </div>
@@ -16,22 +16,25 @@
 </div>
 
 <div class="container">
-  Cidades
+  <h1>Cidades</h1>
   <div class="form-group" >
     <input type="text" class="form-control" id="search"
       ng-change="listCtrl.actions.onTypeSearch()"
       ng-model="listCtrl.search" />
   </div>
 
-  <ul ng-if="listCtrl.cities.length">
-    <li ng-repeat="city in listCtrl.cities">
-      <h2 ui-sref="simpleTheme.city.profile({id: city.id })" ng-bind="city.name"></h2>
-      <span>
-        <b>IDH</b>:
-        <span ng-bind="city.idh"></span>
-        <b>Score</b>:
-        <span ng-bind="city.score"></span>
-      </span>
+  <ul class="list-unstyled" ng-if="listCtrl.cities.length">
+    <li ng-repeat="city in listCtrl.cities" >
+      <div class="col-md-12">
+        <div class="col-md-3">
+          <h3 ui-sref="simpleTheme.city.profile({id: city._id })" ng-bind="city.name"></h3>
+        </div>
+        <div class="col-md-9" style="line-height: 50px; ">
+           <b>IDH</b>:
+           <span ng-bind="city.idh"></span>
+        </div>
+      </div>
+   
     </li>
   </ul>
 

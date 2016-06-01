@@ -3,7 +3,7 @@ var express  = require('express'),
 	
 var router = express.Router();
 
-router.route('/')
+router.route('/:id/proposal')
 	.get((req, res) => {
 		let cityId = req.params.id;
 		executer(dao.findAllByCityId(cityId), res);
@@ -20,7 +20,7 @@ router.route('/')
 		executer(dao.save(proposal), res);
 	});
 
-router.route('/:proposalId')
+router.route('/:id/proposal/:proposalId')
 	.get((req, res) => {
 		executer(dao.findById(req.params.id), res);
 	})

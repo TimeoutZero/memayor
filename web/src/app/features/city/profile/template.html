@@ -1,50 +1,62 @@
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-default navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">
-        <img alt="Brand" src="...">
+        M
       </a>
     </div>
   </div>
 </nav>
 
-<div style="
-  height: 300px;
-  margin-top    : -20px;
-  margin-bottom : 20px;
-  text-align: center;
-  background-color: #000">
+<div >
 
   <div mm-banner>
     <p>
       <h1>Itapecerica da Serra</h1>
-      <h4>Itapecerica da Serra é um município da Microrregião de Itapecerica da Serra, localizado na região metropolitana do Estado de São Paulo no Brasil</h4>
-      <h5>Categorias em destaque: Saúde, Transporte e Educação </h5>
+      <h4>É um município da Microrregião de Itapecerica da Serra, localizado na região metropolitana do Estado de São Paulo no Brasil</h4>
+      <h5>Categorias em destaque: <b>Saúde, Transporte e Educação</b> </h5>
+
+      <button type="button" class="btn btn-primary">Criar proposta</button>
+
     </p>
   </div>
 </div>
 
 <div class="container">
+  
   <div class="row">
-    <div class="col-sm-6 col-md-3" ng-repeat="proposal in profileCtrl.proposals">
+    <div class="col-sm-6 col-md-3" style="min-height: 470px; height: 470px;" ng-repeat="proposal in profileCtrl.model">
       <div class="thumbnail">
-        <img style="margin-bottom: 30px;" src="http://1.bp.blogspot.com/-4fqrt2MACHQ/UADPlJjibiI/AAAAAAAAAcc/FBN03q3jT2A/s1600/blank_post_thumbnail.png"
-          alt="...">
+        <img src="http://1.bp.blogspot.com/-4fqrt2MACHQ/UADPlJjibiI/AAAAAAAAAcc/FBN03q3jT2A/s1600/blank_post_thumbnail.png" alt="...">
         <div class="caption">
 
-          <h4>{{proposal.title}}</h4>
-          <span> 1.2k <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-          </span>
+          <b>{{proposal.title}}</b>
 
           <p style="font-size: 12px">{{proposal.description}}</p>
+          
+          <b>Categorias:</b >
+          <span ng-repeat="category in proposal.categories" ng-bind="category" 
+            style="margin-right: 5px; padding: 5px; height: 15px; background-color: #FAD1FF;"></span>
+          
           <hr />
+          <div style="text-align: center;">
+            <span> {{proposal.votes}} <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          </div>
+
           <p style="text-align: center; font-size: 12px">By Lucas Martins</p>
 
+          </span>
           <div style="text-align: center">
             <p><a href="#" class="btn btn-primary" role="button">Button</a> </p>
           </div>
         </div>
       </div>
+    </div>
+  </div>
+  
+  <div class="row" ng-if="!profileCtrl.model.length">
+    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <p>Nenhuma proposta encontrada</p>
     </div>
   </div>
 </div>

@@ -25,6 +25,10 @@ angular.module 'MeMayor'
          '@simpleTheme.proposal':
             templateUrl : "app/features/proposal/list/template.html"
             controller  : "ProposalListController as listCtrl"
+            resolve     :
+              model: ['ProposalService', '$stateParams', (ProposalService, $stateParams) ->
+                return ProposalService.list($stateParams.id)
+              ]
 
       # .state "simpleTheme.proposal.create",
       #   url  : "/create"

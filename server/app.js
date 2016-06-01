@@ -10,8 +10,8 @@ app.use(morgan('combined'));
 app.use(express.static('public'));
 app.use(bodyParser.json());
 
-app.use('/city'     , require('./features/city/route.js'));
-app.use('/city/:id/proposal' , require('./features/proposal/route.js'));
+app.use('/city' , require('./features/city/route.js'));
+app.use('/city' , require('./features/proposal/route.js'));
 
 app.listen(PORT, () => {
     console.log(`MeMayor started... PORT=${PORT}`);
