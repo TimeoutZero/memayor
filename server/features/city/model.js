@@ -1,7 +1,7 @@
-var moongose = require('../../config/mongo.js');
-var Schema   = moongose.Schema;
+var mongoose = require('../../core/mongo.js');
+var Schema   = require('mongoose').Schema;
 
-const name = 'City';
+const name = 'city';
 
 var schema = new Schema({
     name    : String,
@@ -11,4 +11,4 @@ var schema = new Schema({
     score   : Number
 }, { collection: name } );
 
-module.exports = moongose.model(name, schema);
+module.exports = mongoose.model(name, schema);

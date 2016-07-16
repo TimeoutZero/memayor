@@ -1,0 +1,14 @@
+{"level":"info","message":"[APPLICATION] Started... PORT=9000","timestamp":"2016-07-16T02:18:23.619Z"}
+{"message":"getaddrinfo ENOTFOUND undefined undefined:27017","name":"MongoError","stack":"Error: getaddrinfo ENOTFOUND undefined undefined:27017\n    at errnoException (dns.js:28:10)\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:79:26)","level":"error","timestamp":"2016-07-16T02:18:23.627Z"}
+{"level":"info","message":"[APPLICATION] Started... PORT=9000","timestamp":"2016-07-16T02:19:31.599Z"}
+{"message":"getaddrinfo ENOTFOUND undefined undefined:27017","name":"MongoError","stack":"Error: getaddrinfo ENOTFOUND undefined undefined:27017\n    at errnoException (dns.js:28:10)\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:79:26)","level":"error","timestamp":"2016-07-16T02:19:31.608Z"}
+{"level":"info","message":"URL: mongodb://undefined/memayor, OPTIONS: undefined ","timestamp":"2016-07-16T02:20:38.984Z"}
+{"level":"info","message":"[APPLICATION] Started... PORT=9000","timestamp":"2016-07-16T02:20:39.014Z"}
+{"message":"getaddrinfo ENOTFOUND undefined undefined:27017","name":"MongoError","stack":"Error: getaddrinfo ENOTFOUND undefined undefined:27017\n    at errnoException (dns.js:28:10)\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:79:26)","level":"error","timestamp":"2016-07-16T02:20:39.019Z"}
+{"level":"info","message":"./conf/dev.json","timestamp":"2016-07-16T02:23:20.400Z"}
+{"level":"info","message":"URL: mongodb://undefined/memayor, OPTIONS: undefined ","timestamp":"2016-07-16T02:23:25.450Z"}
+{"level":"info","message":"[APPLICATION] Started... PORT=9000","timestamp":"2016-07-16T02:23:25.497Z"}
+{"message":"getaddrinfo ENOTFOUND undefined undefined:27017","name":"MongoError","stack":"Error: getaddrinfo ENOTFOUND undefined undefined:27017\n    at errnoException (dns.js:28:10)\n    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:79:26)","level":"error","timestamp":"2016-07-16T02:23:25.504Z"}
+{"level":"info","message":"./config/dev.json","timestamp":"2016-07-16T02:24:00.894Z"}
+{"level":"info","message":"URL: mongodb://localhost/memayor, OPTIONS: [object Object] ","timestamp":"2016-07-16T02:24:01.391Z"}
+{"level":"info","message":"[APPLICATION] Started... PORT=9000","timestamp":"2016-07-16T02:24:01.424Z"}

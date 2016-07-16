@@ -1,0 +1,18 @@
+{
+  "app": {
+    "port": 9000
+  },
+  "mongo": {
+    "host": "localhost",
+    "user": "dev",
+    "pass": "dev12345",
+    "options": {
+      "server": {
+        "auto_reconnect"    : true,
+        "poolSize"          : 10,
+        "reconnectTries"    : 5,
+        "reconnectInterval" : 2000
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@ var options = {
 
 options.modulesData = {
   proxy: {
-    target: 'http://localhost:7000',
+    target: 'http://localhost:9000',
     preventWhen: function(req, res){
       var isPrevented = true;
       var byPass      = [
