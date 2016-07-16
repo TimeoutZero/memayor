@@ -15,11 +15,9 @@ angular.module "MeMayor.controllers"
     ctrl.searchDebounce = null
     ctrl.madeOneSearch  = no
 
-
     ###*
      * Methods
     ###
-
 
     ###*
      * Initialize

@@ -11,13 +11,13 @@ angular.module 'MeMayor'
           'main@simpleTheme':
             templateUrl : "app/features/proposal/main/template.html"
 
-        resolve:
-          lang:  ['$translatePartialLoader', '$q', ($translatePartialLoader, $q)->
-            promises = [
-              $translatePartialLoader.addPart('features/proposal')
-            ]
-            return $q.all(promises)
-          ]
+        # resolve:
+        #   lang:  ['$translatePartialLoader', '$q', ($translatePartialLoader, $q)->
+        #     promises = [
+        #       $translatePartialLoader.addPart('features/proposal')
+        #     ]
+        #     return $q.all(promises)
+        #   ]
 
       .state "simpleTheme.proposal.list",
         url  : "/list"
@@ -30,16 +30,16 @@ angular.module 'MeMayor'
                 return ProposalService.list($stateParams.id)
               ]
 
-      # .state "simpleTheme.proposal.create",
-      #   url  : "/create"
-      #   views:
-      #    '@simpleTheme.proposal':
-      #       templateUrl : "app/features/proposal/form/template.html"
-      #       controller  : "ProposalFormController as formCtrl"
-      #       resolve     :
-      #         model: ['$q', ($q) ->
-      #           return $q.when(null)
-      #         ]
+      .state "simpleTheme.proposal.create",
+        url  : "/city/:id/create"
+        views:
+         '@simpleTheme.proposal':
+            templateUrl : "app/features/proposal/form/template.html"
+            controller  : "ProposalFormController as formCtrl"
+            resolve     :
+              model: ['$q', ($q) ->
+                return $q.when(null)
+              ]
 
 
       # .state "simpleTheme.proposal.edit",

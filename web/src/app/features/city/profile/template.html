@@ -12,11 +12,12 @@
 
   <div mm-banner>
     <p>
-      <h1>Itapecerica da Serra</h1>
-      <h4>É um município da Microrregião de Itapecerica da Serra, localizado na região metropolitana do Estado de São Paulo no Brasil</h4>
+      <h1>{{profileCtrl.city.name}}</h1>
+      <h4 ng-bind-html="profileCtrl.city.description"></h4>
       <h5>Categorias em destaque: <b>Saúde, Transporte e Educação</b> </h5>
-
-      <button type="button" class="btn btn-primary">Criar proposta</button>
+      <a ui-sref="simpleTheme.proposal.create({id: profileCtrl.city._id })">
+        <button type="button" class="btn btn-primary">Criar proposta</button>
+      </a>
 
     </p>
   </div>

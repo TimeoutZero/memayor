@@ -38,4 +38,8 @@ angular.module 'MeMayor'
               model: ['ProposalService', '$stateParams', (ProposalService, $stateParams) ->
                 return ProposalService.list($stateParams.id)
               ]
+              
+              info : ['CityService', '$stateParams', (CityService, $stateParams) ->
+                return CityService.getById($stateParams.id)
+              ]
 
